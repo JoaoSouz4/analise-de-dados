@@ -1,0 +1,65 @@
+.bloco-s3{
+    display: flex;
+    flex-direction: row;
+}
+.bloco-S3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+.bloco-s3-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.btn2{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    padding: 5px;
+    
+}
+
+.results{
+    margin-top: 20px;
+    width: 100%;
+}
+
+.section4{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.descricao{
+    height: 100px;
+}
+
+.btn4{
+    border-radius: 10px;
+    height: 50px;
+    color: white;
+    background-color:  #01041E;
+    font-weight: bold;
+    padding: 5px;
+    
+}
+
+.bloquinho{
+    margin-bottom: 20px;
+}
+
+.captacao-input{
+    width: 100px;
+}
+
+.box-s3{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
