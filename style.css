@@ -27,6 +27,7 @@ input{
     box-shadow: 1px 1px 3px black;
     height: 35px;
     border-radius: 15px;
+    padding: 10px;
 }
 
 .cabecalho{
@@ -56,10 +57,35 @@ input{
     color: white;
     margin: 20px;
 }
+
+.bloco1{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 20px;
+    width: 450px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.box1{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin: 10px;
+}
 .titulo{
     display: flex;
     justify-content: center;
     margin: 10px;
+}
+
+.main1{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .main{
@@ -70,6 +96,8 @@ input{
     align-items: center;
     
 }
+
+
 
 .bloco{
     background-color: white;
