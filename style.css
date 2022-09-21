@@ -206,6 +206,14 @@ input{
     justify-content: space-between;
 }
 
+.results{
+    border-radius: 20px;
+    height: 100px;
+    box-shadow: 1px 1px 3px black;
+
+   
+}
+
 
 
 .input-panfleto{

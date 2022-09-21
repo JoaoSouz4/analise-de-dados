@@ -1,5 +1,7 @@
 let arrayClientela=[];
 
+const painelClientes = document.querySelector("#painel-cliente");
+
 const btnAddCliente = document.querySelector('#btn-cliente');
 btnAddCliente.addEventListener('click', function(){
 
@@ -11,6 +13,8 @@ btnAddCliente.addEventListener('click', function(){
     const inputPmc = document.querySelector('#pmc');
     const InputDia = document.querySelector('#dia-semana');
 
+    
+
     const nomeCliente = InputnomeCliente.value;
     const idadeCliente = InputidadeCliente.value;
     const servicoCliente = InputservicoCliente.value;
@@ -18,30 +22,23 @@ btnAddCliente.addEventListener('click', function(){
     const horarioCliente = inputPmc.value;
     const diaSemana = InputDia.value;
 
-
-    let Cliente={
-        nome : nomeCliente,
-        idade: idadeCliente,
-        servico: servicoCliente,
-        sexo: sexoCliente,
-        horario: horarioCliente,
-        dia: diaSemana
-
+    if(nomeCliente ==''||idadeCliente == ''||servicoCliente ==''||sexoCliente==''||horarioCliente==''||diaSemana==''){
+        alert('É necessário preencher todos os campos para cadastrar o cliente');
+    }else{
+        let Cliente={
+            nome : nomeCliente,
+            idade: idadeCliente,
+            servico: servicoCliente,
+            sexo: sexoCliente,
+            horario: horarioCliente,
+            dia: diaSemana
+    
+        }
+      
+       arrayClientela.push(Cliente);
+       console.log(arrayClientela);
+       
     }
-  
-   arrayClientela.push(Cliente);
-   console.log(arrayClientela);
+    
 });
 
-function criarObjeto(nome, idade, servico, sexo, horario, dia){
-    let objeto = {
-        nome : nome,
-        idade: idade,
-        servico: servico,
-        sexo : sexo,
-        horario: horario,
-        diaSemana: dia
-    }
-
-    return objeto;
-}
