@@ -7,6 +7,16 @@
     text-decoration: none;
 }
 
+select{
+    border-color: white;
+    border-style: none;
+    box-shadow: 1px 1px 3px black;
+    height: 35px;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+
 header{
     background-color: #000214;
     height: 90px;

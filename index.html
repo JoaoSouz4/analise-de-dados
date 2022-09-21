@@ -151,12 +151,12 @@
     
                         <div class="bloquinho">
                             <p>Nome do Cliente</p>
-                            <input type="text">
+                            <input type="text" id="nome-cliente">
                         </div>
     
                         <div>
                             <p>Serviço solicitado</p>
-                            <input type="text">
+                            <input type="text" id="servico-solicitado">
                         </div>
 
                     </div>
@@ -167,23 +167,44 @@
                     <div class="box-s3">
                         <div>
                             <p>Idade</p>
-                            <input type="text" class="captacao-input">
+                            <input type="text" class="captacao-input" id="idade-cliente">
                         </div>
                         <div>
                             <p>PMC</p>
-                            <input type="text" class="captacao-input">
+                            <input type="text" class="captacao-input" id="pmc">
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div>
-                <p>Sexo</p>
-                <input type="text">
+            <div class="box-s4">
+
+                <div>
+                    <p>Sexo</p>
+                    <select name="Sexo" id="input-sexo">
+                        <option value="Masculino">Masculino</option>
+                        <option value="Feminino">Feminino</option>
+                        <option value="Outro">Outro</option>
+                     
+                    </select>
+                </div>
+                <div>
+    
+                    <p>Dia da Semana</p>
+                    <select name="Dia" id="dia-semana">
+                        <option value="Segunda-Feira">Segunda-Feira</option>
+                        <option value="Terça-Feira">Terça-Feira</option>
+                        <option value="Quarta-feira">Quarta-feira</option>
+                        <option value="Quinta-Feira">Quinta-Feira</option>
+                        <option value="Sexta-Feira">Sexta-Feira</option>
+                        <option value="Sábado">Sábado</option>
+                    </select>
+                    
+                </div>
             </div>
 
             <div class="btn2">
-                <button class="btn4">Adicionar Cliente</button>
+                <button class="btn4" id="btn-cliente">Adicionar Cliente</button>
             </div>
 
             <div>
@@ -205,14 +226,14 @@
                    <input type="text" name="" id="">
 
                 <p>Descrição</p>
-                <input type="text" class="descricao">
+                <input type="text" class="descricao" id="input-reclamacao">
 
                 <div class="btn2">
-                    <button class="btn4">Adicionar feedback</button>
+                    <button class="btn4" id="btnreclamacoes">Adicionar feedback</button>
                 </div>
 
                 <div>
-                    <input type="text" class="results">
+                    <input type="text" class="results" >
                 </div>
             </div>
 
@@ -268,7 +289,8 @@
                 <div> Ícones feitos por <a href="https://www.freepik.com" title="Freepik"> Freepik </a> from <a href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com'</a></div>
             </div>
     </footer>
-
+    <script src="clientela.js"></script>
     <script src="index.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

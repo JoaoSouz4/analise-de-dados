@@ -43,6 +43,7 @@ btn.addEventListener('click', function(){
 
     console.log("A média de panfletos entregues diariamente é: "+media)
     console.log("Você distribuiu um total de "+ soma +" de panfletos nesta semana");
+
     
     
 });
@@ -68,6 +69,33 @@ function pegarPanfletos(){
     
 }
 
+/*const btnAddCliente = document.querySelector('#btn-cliente');
+btnAddCliente.addEventListener('click', function(){
+
+    let arrayClientela = [];
+    const InputnomeCliente = document.querySelector('#nome-cliente');
+    const InputidadeCliente = document.querySelector('#idade-cliente');
+    const InputservicoCliente = document.querySelector('#servico-solicitado');
+    const inputPmc = document.querySelector('#pmc');
+
+    const nomeCliente = InputnomeCliente.value;
+    const idadeCliente = InputidadeCliente.value;
+    const servicoCliente = InputservicoCliente.value;
+    const pmc = inputPmc.value;
+
+    let Cliente = {
+        nome : nomeCliente,
+        idade : idadeCliente,
+        servico : servicoCliente,
+        pmcU :  pmc
+    }   
+    arrayClientela.push(Cliente);
+    console.log(arrayClientela);
+    
+});*/
+
+
+
 function mediaPanfletosDias(array){
     let soma=0;
     let dias = array.length;
@@ -88,6 +116,11 @@ function somaPanfletos(arrays){
 
     return soma;
 }
+
+
+
+
+
 
 
 
