@@ -7,6 +7,13 @@
     text-decoration: none;
 }
 
+a{
+    text-decoration: none;
+    color: white;
+    color-scheme: white;
+    
+}
+
 select{
     border-color: white;
     border-style: none;
@@ -24,7 +31,7 @@ header{
 }
 
 body{
-  
+   
     background-color: #01041E;
     font-family: 'Poppins', sans-serif;
     
@@ -58,6 +65,10 @@ input{
     gap: 100px;
     align-items: center;
     font-size: 20px;
+}
+
+.indice-color:hover{
+    color: rgb(5, 255, 117);
 }
 
 .informacoes{

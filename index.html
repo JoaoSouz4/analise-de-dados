@@ -7,6 +7,8 @@
     <title>COS-Análises</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style2.css">
+    <link rel="shortcut icon" href="icones/transferir.jpg" type="image/x-icon">
+</head>
    
     
 </head>
@@ -17,8 +19,8 @@
         </div>
 
         <div class="indices">
-            <p> <a href="index.html"></a>  Home</p>
-            <p> <a href=""></a> Sobre o projeto</p>
+            <a href="index.html"><p class="indice-color">Home</p></a>
+            <a href="sobre.html"><p class="indice-color">Sobre o Projeto</p></a>
         </div>
 
     </header>
@@ -170,7 +172,7 @@
                             <input type="text" class="captacao-input" id="idade-cliente">
                         </div>
                         <div>
-                            <p>PMC</p>
+                            <p>Horário</p>
                             <input type="text" class="captacao-input" id="pmc">
                         </div>
                     </div>
@@ -223,7 +225,7 @@
 
                
                    <p>Título</p>
-                   <input type="text" name="" id="">
+                   <input type="text" name="" id="title-R">
 
                 <p>Descrição</p>
                 <input type="text" class="descricao" id="input-reclamacao">
@@ -251,17 +253,17 @@
 
                
                    <p>Título</p>
-                   <input type="text" name="" id="">
+                   <input type="text" name="" id="tituloE">
 
                 <p>Descrição</p>
-                <input type="text" class="descricao">
+                <input type="text" class="descricao" id="input-elogio">
 
-                <div class="btn2">
-                    <button class="btn4">Adicionar feedback</button>
+                <div class="btn2" >
+                    <button class="btn4" id="btnelogios">Adicionar feedback</button>
                 </div>
 
                 <div>
-                    <input type="text" class="results">
+                    <input type="text" class="results" >
                 </div>
             </div>
 
@@ -291,6 +293,7 @@
     </footer>
     <script src="clientela.js"></script>
     <script src="index.js"></script>
-    <script src="script.js"></script>
+    <script src="FedbackReclamacao.js"></script>
+    <script src="FedbackElogios.js"></script>
 </body>
 </html>
