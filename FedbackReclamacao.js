@@ -1,24 +1,51 @@
+let arrayReclamacao = [];
+let contadordeReclamacao = 0;
 
-let arrayFedbackBad = [];
+const btnR = document.querySelector('#btnR');
+const btnRemoveR = document.querySelector('#btn-deleteRecl');
+const btnRemoveRAll = document.querySelector('#btn-deleteReclAll');
+const CR = document.querySelector('#CR');
 
-
-const reclamacoes = document.querySelector('#btnreclamacoes');
-reclamacoes.addEventListener('click', function(){
-
+btnR.addEventListener('click', function(){
     const inputTituloR = document.querySelector('#title-R');
     const tituloR = inputTituloR.value;
-    
-    const inputReclamacao = document.querySelector('#input-reclamacao');
-    const reclamacao = inputReclamacao.value;
 
-    let objetoReclamacao={
-        titulo: tituloR,
-        reclamacao : reclamacao
+    const inputDescricaoR = document.querySelector('#input-reclamacao');
+    const descricaoR = inputDescricaoR.value;
+
+    if(inputDescricaoR == '' || inputTituloR == '') alert("Erro | Verifique se todos os campos foram preenchidos");
+    else{
+        contadordeReclamacao++;
+        let ObjetoReclamacao={
+            titulo: tituloR,
+            descricao : descricaoR
+        }
+
+        arrayReclamacao.push(ObjetoReclamacao);
+        console.log(arrayReclamacao);
+        CR.innerHTML = contadordeReclamacao;
     }
-
-    arrayFedbackBad.push(objetoReclamacao);
-    console.log(arrayFedbackBad);
 });
 
+btnRemoveR.addEventListener('click', function(){
+    if(contadordeReclamacao<=0) alert('ERRO | Não é mais possível remover reclamações da lista');
+    else{
+        contadordeReclamacao--;
+        CR.innerHTML = contadordeReclamacao;
+        arrayReclamacao.pop();
+        console.log(arrayReclamacao);
+    }
+});
 
+btnRemoveRAll.addEventListener('click', function(){
+    if(contadordeReclamacao<=0) confirm('Todos os elementos foram removidos')
+    else{
+            contadordeReclamacao=0;
+            CR.innerHTML = contadordeReclamacao;
+        for(let i = 0; i<arrayReclamacao.length;i++){
+            arrayReclamacao.splice(arrayReclamacao[i]);
+        }
+        console.log(arrayReclamacao);
+    }
+});
 

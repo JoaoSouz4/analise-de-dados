@@ -157,7 +157,20 @@
     
                         <div>
                             <p>Serviço solicitado</p>
-                            <input type="text" id="servico-solicitado">
+                            <select name="Escolha um serviço" id="servico-solicitado">
+                                <option value="Avaliação">Avaliação</option>
+                                <option value="Manutenção">Manutenção</option>
+                                <option value="Limpeza">Limpeza</option>
+                                <option value="Clareamento">Clareamento</option>
+                                <option value="Extração">Extração</option>
+                                <option value="Bituração">Bituração</option>
+                                <option value="Canal">Canal</option>
+                                <option value="Restauração">Restauração</option>
+                                <option value="Implante">Implante</option>
+                                <option value="Enxerto">Enxerto</option>
+                                <option value="Odontopediatria">Odontopediatria</option>
+                                <option value="Outro">Outro</option>
+                            </select>
                         </div>
 
                     </div>
@@ -217,8 +230,6 @@
                 </div>
                 <button class="btn4" id="btn-cliente">Adicionar Cliente</button>
             </div>
-
-            
         </section>
 
         <section class="bloco">
@@ -237,15 +248,18 @@
                 <input type="text" class="descricao" id="input-reclamacao">
 
                 <div class="btn2">
-                    <button class="btn4" id="btnreclamacoes">Adicionar feedback</button>
-                </div>
-
-                <div>
-                    <input type="text" class="results" >
+                    <div class="controles">
+                        <div>
+                            Reclamações Registradas: <span id="CR">0</span>
+                        </div>
+                        <div>
+                         <button class="btn-controle" id="btn-deleteRecl">Apagar última Reclamação</button>
+                         <button class="btn-controle" id="btn-deleteReclAll">Remover tudo</button>
+                         </div>
+                    </div>
+                    <button class="btn4" id="btnR">Adicionar Reclamação</button>
                 </div>
             </div>
-
-
         </section>
 
         <section class="bloco">
@@ -257,7 +271,6 @@
 
             <div class="section4">
 
-               
                    <p>Título</p>
                    <input type="text" name="" id="tituloE">
 
@@ -265,24 +278,26 @@
                 <input type="text" class="descricao" id="input-elogio">
 
                 <div class="btn2" >
+                    <div class="controles">
+                        <div>
+                            Fedbacks Registrados: <span id="contadorFedback">0</span>
+                        </div>
+                        <div>
+                         <button class="btn-controle" id="btn-deletefeed">Apagar último Fedback</button>
+                         <button class="btn-controle" id="btn-deletefeedAll">Remover tudo</button>
+                         </div>
+                    </div>
                     <button class="btn4" id="btnelogios">Adicionar feedback</button>
                 </div>
-
-                <div>
-                    <input type="text" class="results" >
-                </div>
             </div>
-
         </section>
     </main>
     
     <div class="btn-container">
         <button class="btn" id="btn">Gerar Relatório</button>
-    </div> !-->
-   
+    </div> 
 
     <footer class="footer">
-            
                 
                 <h4>Desenvolvido por: João Souza</h4>
                 <div class="instagram">
@@ -291,7 +306,6 @@
                 </div>
                 <h4> Setembro | 2022</h4>
             
-
             <div class="direitos">
                 <p>Todos os direitos reservados</p>
                 <div> Ícones feitos por <a href="https://www.freepik.com" title="Freepik"> Freepik </a> from <a href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com'</a></div>
