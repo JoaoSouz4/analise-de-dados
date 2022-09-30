@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style2.css">
     <link rel="shortcut icon" href="icones/transferir.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="Clientela.css">
 </head>
    
     
@@ -131,12 +132,10 @@
                     </div>
 
                     <div class="box">
-                        <input type="text" name="" id="quinta" class="input-panfleto">
-                        <input type="text" name="" id="sexta" class="input-panfleto">
-                        <input type="text" name="" id="sabado" class="input-panfleto">
+                        <input type="text"  id="quinta" class="input-panfleto">
+                        <input type="text"  id="sexta" class="input-panfleto">
+                        <input type="text"  id="sabado" class="input-panfleto">
                     </div>
-
-
                 </div>
 
         </section>
@@ -206,12 +205,20 @@
             </div>
 
             <div class="btn2">
+                <div class="controles">
+                    <div>
+                        Clientes registrados: <span id="contador">0</span>
+                    </div>
+                   <div>
+                     <button class="btn-controle" id="btn-delete">Apagar último cliente</button>
+                   
+                     <button class="btn-controle" id="btn-deleteAll">Remover Clientela</button>
+                   </div>
+                </div>
                 <button class="btn4" id="btn-cliente">Adicionar Cliente</button>
             </div>
 
-            <div>
-                <div class="results" id="painel-cliente"></div> 
-            </div>
+            
         </section>
 
         <section class="bloco">
@@ -222,7 +229,6 @@
             </div>
 
             <div class="section4">
-
                
                    <p>Título</p>
                    <input type="text" name="" id="title-R">

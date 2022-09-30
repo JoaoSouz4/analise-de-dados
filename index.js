@@ -1,30 +1,21 @@
 const btn = document.querySelector('#btn');
 
 btn.addEventListener('click', function(){
-    console.log('O botão está funcionado!');
 
     const inputTitle = document.querySelector('#titulo');
     const title = inputTitle.value;
 
-    console.log(title);
-
     const inputName = document.querySelector('#inputName');
     const nome = inputName.value;
 
-    console.log(nome);
-
     const inputFunction = document.querySelector('#inputFunction');
     const funcao = inputFunction.value;
-
-    console.log(funcao);
 
     const inputTime = document.querySelector('#inputTime');
     const time = inputTime.value;
 
     const inputTimeB = document.querySelector('#inputTime2');
     const timeB = inputTimeB.value;
-
-    console.log(time, timeB);
 
     const inputDia = document.querySelector('#data');
     const dia = inputDia.value;
@@ -35,7 +26,6 @@ btn.addEventListener('click', function(){
     const inputAno = document.querySelector('#ano');
     const ano = inputAno.value;
 
-    console.log(dia, mes, ano);
 
     let arrayPanfletos = pegarPanfletos();
     let media = mediaPanfletosDias(arrayPanfletos);
@@ -44,8 +34,6 @@ btn.addEventListener('click', function(){
     console.log("A média de panfletos entregues diariamente é: "+media)
     console.log("Você distribuiu um total de "+ soma +" de panfletos nesta semana");
 
-    
-    
 });
 
 function pegarPanfletos(){

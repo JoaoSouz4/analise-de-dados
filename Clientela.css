@@ -1,0 +1,14 @@
+.controles{
+    display: flex;
+    flex-direction: column;
+    gap: 5px
+}
+
+.btn-controle{
+    border-radius: 10px;
+    height: 30px;
+    color: white;
+    background-color:  #01041E;
+    font-weight: bold;
+    padding: 5px;
+}

@@ -1,8 +1,11 @@
 let arrayClientela=[];
+let contador = 0;
 
-const painelClientes = document.querySelector("#painel-cliente");
-
+const span = document.querySelector('#contador');
 const btnAddCliente = document.querySelector('#btn-cliente');
+const btnRemoveAll = document.querySelector('#btn-deleteAll');
+const btnRemove = document.querySelector('#btn-delete');
+
 btnAddCliente.addEventListener('click', function(){
 
     
@@ -25,6 +28,7 @@ btnAddCliente.addEventListener('click', function(){
     if(nomeCliente ==''||idadeCliente == ''||servicoCliente ==''||sexoCliente==''||horarioCliente==''||diaSemana==''){
         alert('É necessário preencher todos os campos para cadastrar o cliente');
     }else{
+        contador++;
         let Cliente={
             nome : nomeCliente,
             idade: idadeCliente,
@@ -37,8 +41,33 @@ btnAddCliente.addEventListener('click', function(){
       
        arrayClientela.push(Cliente);
        console.log(arrayClientela);
-       
+       span.innerHTML = contador;
     }
     
+});
+
+btnRemoveAll.addEventListener('click', function(){
+
+    confirm("Tem certeza que deseja remover toda a clientela registrada?");
+
+ 
+        contador = 0;
+        span.innerHTML = contador;
+        for(let i = 0; i<arrayClientela.length;i++){
+            arrayClientela.splice(arrayClientela[i]);
+        }
+       
+        console.log(arrayClientela);
+    
+    
+});
+
+btnRemove.addEventListener('click', function(){
+
+    contador--;
+    span.innerHTML = contador;
+    arrayClientela.pop();
+    console.log(arrayClientela);
+
 });
 
