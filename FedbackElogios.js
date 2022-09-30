@@ -9,16 +9,22 @@ elogios.addEventListener('click', function(){
 
     const inputTituloE = document.querySelector('#tituloE');
     const tituloE = inputTituloE.value;
-    
     const inputElogio = document.querySelector('#input-elogio');
     const elogio = inputElogio.value;
+    const InputRegistroR = document.querySelector('#date-E');
+    const registroE = InputRegistroR.value;
+    const InputTimeE = document.querySelector('#time-E');
+    const timeE = InputTimeE.value;
+    
 
     if(inputElogio =='' || inputTituloE=='' ) alert("Você precisa preencher todos os campos para adicionar um feedback");
     else{
         contadorFeedback++;
         let objetoElogio={
             titulo: tituloE,
-            elogioUm : elogio
+            elogioUm : elogio,
+            dataregistro: registroE,
+            horas: timeE
         }
     
         arrayFedbackGood.push(objetoElogio);

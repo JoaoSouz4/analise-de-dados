@@ -20,11 +20,6 @@ btn.addEventListener('click', function(){
     const inputDia = document.querySelector('#data');
     const dia = inputDia.value;
 
-    const inputMes = document.querySelector('#mes');
-    const mes = inputMes.value;
-
-    const inputAno = document.querySelector('#ano');
-    const ano = inputAno.value;
 
 
     let arrayPanfletos = pegarPanfletos();
@@ -33,6 +28,8 @@ btn.addEventListener('click', function(){
 
     console.log("A média de panfletos entregues diariamente é: "+media)
     console.log("Você distribuiu um total de "+ soma +" de panfletos nesta semana");
+    console.log("A quantidade de clientes cadastrados foram de: "+quantCliente)
+    console.log(dia);
 
 });
 

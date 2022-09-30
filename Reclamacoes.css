@@ -1,0 +1,9 @@
+.container-Regisro{
+    display: flex;
+    flex-direction: column;
+}
+
+.Registro-Reclamacao{
+    display: flex;
+    gap:25px;
+}

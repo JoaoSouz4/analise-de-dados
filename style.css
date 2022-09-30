@@ -165,6 +165,7 @@ input{
 }
 .carga-horaria2{
     display: flex;
+    gap: 5px;
     flex-direction: row;
     align-items: center;
 }
@@ -186,7 +187,7 @@ input{
 }
 
 .data-emissao{
-    width: 60px;
+    width: 150px;
     align-items: center;
 }
 .data-ano{
@@ -195,10 +196,10 @@ input{
 }
 .data{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-top: 10px;
     gap: 5px;
-    align-items: center;
+    
 }
 
 .mistura{

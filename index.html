@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style2.css">
     <link rel="shortcut icon" href="icones/transferir.jpg" type="image/x-icon">
     <link rel="stylesheet" href="Clientela.css">
+    <link rel="stylesheet" href="Reclamacoes.css">
 </head>
    
     
@@ -22,12 +23,13 @@
         <div class="indices">
             <a href="index.html"><p class="indice-color">Home</p></a>
             <a href="sobre.html"><p class="indice-color">Sobre o Projeto</p></a>
+            <a href="#"><p class="indice-color">Login</p></a>
         </div>
 
     </header>
 
     <div class="informacoes">
-        <h1 class="titulo">Emissor de Relatório Mensal</h1>
+        <h1 class="titulo">Emissor de Relatório Semanal</h1>
         <p class="titulo">Preencha os campos abaixo com suas anotações diárias como recepcionista da portaria da clínica COS.<br> Após isso,
             clique no botão "Gerar Relatório" para que seja emitido seu relatório para analíse de dados. </br> O relatório estará disponível para download.
         </p>
@@ -63,7 +65,9 @@
                                     <img src="icones/configuracao.png" alt="">
                                     <p><strong>Função</strong></p>
                                     </div>
-                                <input type="" name="" id="inputFunction" >
+                                <select name="" id="inputFunction">
+                                    <option value=""> Vendedor/Panfleteiro</option>
+                                </select>
                             </div>
                 </div>
 
@@ -74,9 +78,9 @@
                             <p><strong>Carga horária diária</strong></p>
                         </div>
                             <div class="carga-horaria2">
-                                <input type="text" class="emissao" id="inputTime">
+                                <input type="time" class="emissao" id="inputTime">
                                 <p>Até as</p>
-                                <input type="text" class="emissao" id="inputTime2">
+                                <input type="time" class="emissao" id="inputTime2">
                             </div>
                     </div>
                         <div class="emissao-de-documento">
@@ -87,16 +91,7 @@
                             </div>
                             <div class="emissao-doc-container">
                                 <div class="data">
-                                    <p>Dia</p>
-                                    <input type="text" class="data-emissao" id="data">
-                                </div>
-                                <div class="data">
-                                    <p>Mês</p>
-                                    <input type="text" class="data-emissao" id="mes">
-                                </div>
-                                <div class="data">
-                                    <p>Ano</p>
-                                    <input type="text" class="data-ano" id="ano">
+                                    <input type="date" class="data-emissao" id="data">
                                 </div>
                             </div>
                         </div>
@@ -120,9 +115,9 @@
                     </div>
 
                     <div class="box">
-                        <input type="text" name="" id="segunda" class="input-panfleto">
-                        <input type="text" name="" id="terca" class="input-panfleto">
-                        <input type="text" name="" id="quarta" class="input-panfleto">
+                        <input type="number" name="" id="segunda" class="input-panfleto">
+                        <input type="number" name="" id="terca" class="input-panfleto">
+                        <input type="number" name="" id="quarta" class="input-panfleto">
                     </div>
 
                     <div class="box">
@@ -132,9 +127,9 @@
                     </div>
 
                     <div class="box">
-                        <input type="text"  id="quinta" class="input-panfleto">
-                        <input type="text"  id="sexta" class="input-panfleto">
-                        <input type="text"  id="sabado" class="input-panfleto">
+                        <input type="number"  id="quinta" class="input-panfleto">
+                        <input type="number"  id="sexta" class="input-panfleto">
+                        <input type="number"  id="sabado" class="input-panfleto">
                     </div>
                 </div>
 
@@ -181,11 +176,11 @@
                     <div class="box-s3">
                         <div>
                             <p>Idade</p>
-                            <input type="text" class="captacao-input" id="idade-cliente">
+                            <input type="number" class="captacao-input" id="idade-cliente">
                         </div>
                         <div>
                             <p>Horário</p>
-                            <input type="text" class="captacao-input" id="pmc">
+                            <input type="time" class="captacao-input" id="pmc">
                         </div>
                     </div>
                 </div>
@@ -240,9 +235,21 @@
             </div>
 
             <div class="section4">
-               
-                   <p>Título</p>
-                   <input type="text" name="" id="title-R">
+               <div class="Registro-Reclamacao">
+                   
+                       <div class="container-Regisro">
+                           <p>Título</p>
+                           <input type="text" name="" id="title-R">
+                       </div>
+                       <div class="container-Regisro">
+                           <p>Data de Registro</p>
+                           <input type="date" name="" id="date-R">
+                       </div>
+                       <div class="container-Regisro">
+                           <p>Horário registrado</p>
+                           <input type="time" name="" id="time-R">
+                       </div>
+               </div>
 
                 <p>Descrição</p>
                 <input type="text" class="descricao" id="input-reclamacao">
@@ -270,9 +277,21 @@
             </div>
 
             <div class="section4">
-
-                   <p>Título</p>
-                   <input type="text" name="" id="tituloE">
+                <div class="Registro-Reclamacao">
+                   
+                    <div class="container-Regisro">
+                        <p>Título</p>
+                        <input type="text" name="" id="tituloE">
+                    </div>
+                    <div class="container-Regisro">
+                        <p>Data de Registro</p>
+                        <input type="date" name="" id="date-E">
+                    </div>
+                    <div class="container-Regisro">
+                        <p>Horário registrado</p>
+                        <input type="time" name="" id="time-E">
+                    </div>
+            </div>
 
                 <p>Descrição</p>
                 <input type="text" class="descricao" id="input-elogio">

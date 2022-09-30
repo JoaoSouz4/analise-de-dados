@@ -1,4 +1,5 @@
 let arrayClientela=[];
+let quantCliente;
 let contador = 0;
 
 const span = document.querySelector('#contador');
@@ -42,7 +43,9 @@ btnAddCliente.addEventListener('click', function(){
        arrayClientela.push(Cliente);
        console.log(arrayClientela);
        span.innerHTML = contador;
+       quantCliente = arrayClientela.length;
     }
+    
     
 });
 

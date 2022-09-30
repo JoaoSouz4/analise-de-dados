@@ -6,7 +6,12 @@ const btnRemoveR = document.querySelector('#btn-deleteRecl');
 const btnRemoveRAll = document.querySelector('#btn-deleteReclAll');
 const CR = document.querySelector('#CR');
 
+
 btnR.addEventListener('click', function(){
+    const InputRegistroR = document.querySelector('#date-R');
+    const registroR = InputRegistroR.value;
+    const InputTimeR = document.querySelector('#time-R');
+    const timeR = InputTimeR.value;
     const inputTituloR = document.querySelector('#title-R');
     const tituloR = inputTituloR.value;
 
@@ -18,7 +23,9 @@ btnR.addEventListener('click', function(){
         contadordeReclamacao++;
         let ObjetoReclamacao={
             titulo: tituloR,
-            descricao : descricaoR
+            descricao : descricaoR,
+            registro: registroR,
+            horas: timeR
         }
 
         arrayReclamacao.push(ObjetoReclamacao);
