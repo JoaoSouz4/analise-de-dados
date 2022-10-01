@@ -25,13 +25,15 @@ select{
 
 
 header{
+  
     background-color: #000214;
     height: 90px;
+   
     width: 100%;
 }
 
 body{
-   
+   box-sizing: border-box;
     background-color: #01041E;
     font-family: 'Poppins', sans-serif;
     

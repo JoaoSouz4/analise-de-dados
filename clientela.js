@@ -44,9 +44,8 @@ btnAddCliente.addEventListener('click', function(){
        console.log(arrayClientela);
        span.innerHTML = contador;
        quantCliente = arrayClientela.length;
-    }
-    
-    
+       encontrarMaiorServico(arrayClientela);
+    }  
 });
 
 btnRemoveAll.addEventListener('click', function(){
@@ -73,4 +72,34 @@ btnRemove.addEventListener('click', function(){
     console.log(arrayClientela);
 
 });
+
+function encontrarMaiorServico(array){
+   let arrayServicos = {
+    avaliacao:0,
+    manutencao:0,
+    limpeza: 0, 
+    extração :0, 
+    canal:0, 
+    restauracao:0,
+    implante: 0, 
+    enxerto:0,
+    odontopediatria:0,
+    outro:0
+   }
+    array.forEach(object =>{
+        if(object.servico === "Avaliação") arrayServicos.avaliacao++
+        else if(object.servico ==="Manutenção") arrayServicos.manutencao++
+        else if(object.servico ==="Limpeza") arrayServicos.limpeza++
+        else if(object.servico ==="Clareamento") arrayServicos.clareamento++
+        else if(object.servico ==="Extração") arrayServicos.extração++
+        else if(object.servico ==="Canal") arrayServicos.canal++
+        else if(object.servico ==="Restauração") arrayServicos.restauracao++
+        else if(object.servico ==="Implante") arrayServicos.implante++
+        else if(object.servico ==="Enxerto") arrayServicos.enxerto++
+        else if(object.servico ==="Odontopediatria") arrayServicos.odontopediatria++
+        else if(object.servico ==="Outro") arrayServicos.outro++
+    });
+    console.log(arrayServicos.avaliacao);
+}
+
 
